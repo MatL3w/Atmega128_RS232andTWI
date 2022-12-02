@@ -1,0 +1,639 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+                              ./main.o (__udivmodhi4)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+                              c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm128.o (exit)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+                              ./main.o (__do_copy_data)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+                              ./lcdvtwi.o (__do_clear_bss)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(itoa.o)
+                              ./mkuart.o (itoa)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strrev.o)
+                              c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(itoa.o) (strrev)
+
+Allocating common symbols
+Common symbol       size              file
+
+tablicaDanychTWI    0xc8              ./main.o
+znakZbufora         0x1               ./main.o
+UART_TxHead         0x1               ./mkuart.o
+adresTWI            0x1               ./main.o
+UART_TxBuf1         0x10              ./mkuart2.o
+UART_RxTail1        0x1               ./mkuart2.o
+UART_RxHead1        0x1               ./mkuart2.o
+adresy              0x40              ./main.o
+UART_RxBuf1         0x20              ./mkuart2.o
+tablicaADRESYTWI    0xc8              ./main.o
+UART_TxTail1        0x1               ./mkuart2.o
+UART_TxTail         0x1               ./mkuart.o
+bufor               0x2               ./main.o
+znakZbufora1        0x1               ./main.o
+UART_TxBuf          0x10              ./mkuart.o
+UART_RxHead         0x1               ./mkuart.o
+UART_RxTail         0x1               ./mkuart.o
+monitor             0x2               ./main.o
+UART_TxHead1        0x1               ./mkuart2.o
+UART_RxBuf          0x20              ./mkuart.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800100         0x0000ff00         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm128.o
+LOAD ./lcdvtwi.o
+LOAD ./main.o
+LOAD ./mkuart.o
+LOAD ./mkuart2.o
+LOAD ./twi.o
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xa54
+ *(.vectors)
+ .vectors       0x00000000       0x8c c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm128.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x0000008c                . = ALIGN (0x2)
+                0x0000008c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000008c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000008c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000008c                __ctors_start = .
+ *(.ctors)
+                0x0000008c                __ctors_end = .
+                0x0000008c                __dtors_start = .
+ *(.dtors)
+                0x0000008c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000008c        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm128.o
+                0x0000008c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000008c        0xc c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm128.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000098       0x1a c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+                0x00000098                __do_copy_data
+ .init4         0x000000b2       0x10 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+                0x000000b2                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000c2        0x8 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm128.o
+ *(.init9)
+ *(.text)
+ .text          0x000000ca        0x4 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm128.o
+                0x000000ca                __vector_22
+                0x000000ca                __vector_28
+                0x000000ca                __vector_1
+                0x000000ca                __vector_34
+                0x000000ca                __vector_24
+                0x000000ca                __vector_12
+                0x000000ca                __bad_interrupt
+                0x000000ca                __vector_6
+                0x000000ca                __vector_3
+                0x000000ca                __vector_23
+                0x000000ca                __vector_25
+                0x000000ca                __vector_11
+                0x000000ca                __vector_13
+                0x000000ca                __vector_17
+                0x000000ca                __vector_7
+                0x000000ca                __vector_27
+                0x000000ca                __vector_5
+                0x000000ca                __vector_4
+                0x000000ca                __vector_9
+                0x000000ca                __vector_2
+                0x000000ca                __vector_21
+                0x000000ca                __vector_15
+                0x000000ca                __vector_29
+                0x000000ca                __vector_8
+                0x000000ca                __vector_26
+                0x000000ca                __vector_14
+                0x000000ca                __vector_10
+                0x000000ca                __vector_16
+ .text          0x000000ce        0x0 ./lcdvtwi.o
+ .text          0x000000ce        0x0 ./main.o
+ .text          0x000000ce        0x0 ./mkuart.o
+ .text          0x000000ce        0x0 ./mkuart2.o
+ .text          0x000000ce        0x0 ./twi.o
+ .text          0x000000ce        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text          0x000000ce        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text          0x000000ce        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text          0x000000ce        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text          0x000000ce        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(itoa.o)
+ .text          0x000000ce        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strrev.o)
+                0x000000ce                . = ALIGN (0x2)
+ *(.text.*)
+ .text.lcdvtwi_write_status
+                0x000000ce       0x16 ./lcdvtwi.o
+                0x000000ce                lcdvtwi_write_status
+ .text.lcdvtwi_data_part
+                0x000000e4       0x3c ./lcdvtwi.o
+                0x000000e4                lcdvtwi_data_part
+ .text.lcdvtwi_write
+                0x00000120       0x5a ./lcdvtwi.o
+                0x00000120                lcdvtwi_write
+ .text.lcdvtwi_write_instruction
+                0x0000017a        0xe ./lcdvtwi.o
+                0x0000017a                lcdvtwi_write_instruction
+ .text.lcdvtwi_write_data
+                0x00000188        0xe ./lcdvtwi.o
+                0x00000188                lcdvtwi_write_data
+ .text.lcdvtwi_write_text
+                0x00000196       0x18 ./lcdvtwi.o
+                0x00000196                lcdvtwi_write_text
+ .text.lcdvtwi_clear
+                0x000001ae        0x6 ./lcdvtwi.o
+                0x000001ae                lcdvtwi_clear
+ .text.lcdvtwi_set_cursor
+                0x000001b4        0xe ./lcdvtwi.o
+                0x000001b4                lcdvtwi_set_cursor
+ .text.lcdvtwi_led_on
+                0x000001c2        0xe ./lcdvtwi.o
+                0x000001c2                lcdvtwi_led_on
+ .text.lcdvtwi_led_off
+                0x000001d0        0xe ./lcdvtwi.o
+                0x000001d0                lcdvtwi_led_off
+ .text.lcdvtwi_init
+                0x000001de       0x9c ./lcdvtwi.o
+                0x000001de                lcdvtwi_init
+ .text.UARTget  0x0000027a       0x1e ./main.o
+                0x0000027a                UARTget
+ .text.CLEARmonitor
+                0x00000298       0x22 ./main.o
+                0x00000298                CLEARmonitor
+ .text.CLEARbufor
+                0x000002ba        0xa ./main.o
+                0x000002ba                CLEARbufor
+ .text.KOMENDY  0x000002c4      0x31a ./main.o
+                0x000002c4                KOMENDY
+ .text.BUFOR    0x000005de       0x26 ./main.o
+                0x000005de                BUFOR
+ .text.startup.main
+                0x00000604       0x4a ./main.o
+                0x00000604                main
+ .text.i2cSetBitrate
+                0x0000064e       0x28 ./main.o
+                0x0000064e                i2cSetBitrate
+ .text.__vector_33
+                0x00000676       0x1c ./main.o
+                0x00000676                __vector_33
+ .text.USART_Init
+                0x00000692       0x12 ./mkuart.o
+                0x00000692                USART_Init
+ .text.__vector_20
+                0x000006a4       0x16 ./mkuart.o
+                0x000006a4                __vector_20
+ .text.uart_putc
+                0x000006ba       0x22 ./mkuart.o
+                0x000006ba                uart_putc
+ .text.uart_puts
+                0x000006dc       0x18 ./mkuart.o
+                0x000006dc                uart_puts
+ .text.uart_putint
+                0x000006f4       0x3a ./mkuart.o
+                0x000006f4                uart_putint
+ .text.__vector_19
+                0x0000072e       0x56 ./mkuart.o
+                0x0000072e                __vector_19
+ .text.uart_getc
+                0x00000784       0x2a ./mkuart.o
+                0x00000784                uart_getc
+ .text.__vector_18
+                0x000007ae       0x4a ./mkuart.o
+                0x000007ae                __vector_18
+ .text.USART_Init1
+                0x000007f8       0x16 ./mkuart2.o
+                0x000007f8                USART_Init1
+ .text.__vector_32
+                0x0000080e       0x16 ./mkuart2.o
+                0x0000080e                __vector_32
+ .text.uart_putc1
+                0x00000824       0x2a ./mkuart2.o
+                0x00000824                uart_putc1
+ .text.uart_puts1
+                0x0000084e       0x18 ./mkuart2.o
+                0x0000084e                uart_puts1
+ .text.uart_putint1
+                0x00000866       0x3a ./mkuart2.o
+                0x00000866                uart_putint1
+ .text.__vector_31
+                0x000008a0       0x60 ./mkuart2.o
+                0x000008a0                __vector_31
+ .text.uart_getc1
+                0x00000900       0x2a ./mkuart2.o
+                0x00000900                uart_getc1
+ .text.__vector_30
+                0x0000092a       0x4c ./mkuart2.o
+                0x0000092a                __vector_30
+ .text.twi_start
+                0x00000976       0x10 ./twi.o
+                0x00000976                twi_start
+ .text.twi_stop
+                0x00000986       0x10 ./twi.o
+                0x00000986                twi_stop
+ .text.twi_write
+                0x00000996       0x14 ./twi.o
+                0x00000996                twi_write
+ .text.twi_read
+                0x000009aa       0x1c ./twi.o
+                0x000009aa                twi_read
+ .text.libgcc.mul
+                0x000009c6        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x000009c6       0x28 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+                0x000009c6                __udivmodhi4
+ .text.libgcc   0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc   0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x000009ee        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x000009ee       0x42 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(itoa.o)
+                0x000009ee                itoa
+ .text.avr-libc
+                0x00000a30       0x20 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strrev.o)
+                0x00000a30                strrev
+                0x00000a50                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000a50        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+                0x00000a50                _exit
+                0x00000a50                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000a50        0x4 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000a54                _etext = .
+
+.data           0x00800100        0x8 load address 0x00000a54
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm128.o
+ .data          0x00800100        0x0 ./lcdvtwi.o
+ .data          0x00800100        0x0 ./main.o
+ .data          0x00800100        0x0 ./mkuart.o
+ .data          0x00800100        0x0 ./mkuart2.o
+ .data          0x00800100        0x0 ./twi.o
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(itoa.o)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strrev.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x00800100        0x8 ./main.o
+ *(.gnu.linkonce.d*)
+                0x00800108                . = ALIGN (0x2)
+                0x00800108                _edata = .
+                0x00800108                PROVIDE (__data_end, .)
+
+.bss            0x00800108      0x24a
+                0x00800108                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800108        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm128.o
+ .bss           0x00800108        0x0 ./lcdvtwi.o
+ .bss           0x00800108        0x0 ./main.o
+ .bss           0x00800108        0x0 ./mkuart.o
+ .bss           0x00800108        0x0 ./mkuart2.o
+ .bss           0x00800108        0x0 ./twi.o
+ .bss           0x00800108        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800108        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_exit.o)
+ .bss           0x00800108        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_copy_data.o)
+ .bss           0x00800108        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/avr51\libgcc.a(_clear_bss.o)
+ .bss           0x00800108        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(itoa.o)
+ .bss           0x00800108        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strrev.o)
+ *(.bss*)
+ .bss.lcdvtwi_status
+                0x00800108        0x1 ./lcdvtwi.o
+                0x00800108                lcdvtwi_status
+ .bss.indeksAdresyTWi
+                0x00800109        0x2 ./main.o
+                0x00800109                indeksAdresyTWi
+ .bss.indeksTablicyTWi
+                0x0080010b        0x2 ./main.o
+                0x0080010b                indeksTablicyTWi
+ .bss.odczytTablicyTWI
+                0x0080010d        0x2 ./main.o
+                0x0080010d                odczytTablicyTWI
+ .bss.odbierajPoTWi
+                0x0080010f        0x2 ./main.o
+                0x0080010f                odbierajPoTWi
+ .bss.wysylajPoTWI
+                0x00800111        0x2 ./main.o
+                0x00800111                wysylajPoTWI
+ *(COMMON)
+ COMMON         0x00800113      0x1d7 ./main.o
+                0x00800113                tablicaDanychTWI
+                0x008001db                znakZbufora
+                0x008001dc                adresTWI
+                0x008001dd                adresy
+                0x0080021d                tablicaADRESYTWI
+                0x008002e5                bufor
+                0x008002e7                znakZbufora1
+                0x008002e8                monitor
+ COMMON         0x008002ea       0x34 ./mkuart.o
+                0x008002ea                UART_TxHead
+                0x008002eb                UART_TxTail
+                0x008002ec                UART_TxBuf
+                0x008002fc                UART_RxHead
+                0x008002fd                UART_RxTail
+                0x008002fe                UART_RxBuf
+ COMMON         0x0080031e       0x34 ./mkuart2.o
+                0x0080031e                UART_TxBuf1
+                0x0080032e                UART_RxTail1
+                0x0080032f                UART_RxHead1
+                0x00800330                UART_RxBuf1
+                0x00800350                UART_TxTail1
+                0x00800351                UART_TxHead1
+                0x00800352                PROVIDE (__bss_end, .)
+                0x00000a54                __data_load_start = LOADADDR (.data)
+                0x00000a5c                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800352        0x0
+                0x00800352                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800352                PROVIDE (__noinit_end, .)
+                0x00800352                _end = .
+                0x00800352                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab           0x00000000      0x954
+ *(.stab)
+ .stab          0x00000000      0x6cc c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm128.o
+ .stab          0x000006cc      0x1b0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(itoa.o)
+                                0x1bc (size before relaxing)
+ .stab          0x0000087c       0xd8 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51\libc.a(strrev.o)
+                                 0xe4 (size before relaxing)
+
+.stabstr        0x00000000      0x183
+ *(.stabstr)
+ .stabstr       0x00000000      0x183 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr51/crtm128.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x2f
+ *(.comment)
+ .comment       0x00000000       0x2f ./lcdvtwi.o
+                                 0x30 (size before relaxing)
+ .comment       0x00000000       0x30 ./main.o
+ .comment       0x00000000       0x30 ./mkuart.o
+ .comment       0x00000000       0x30 ./mkuart2.o
+ .comment       0x00000000       0x30 ./twi.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(ATMEGA128_INZYNIERKA.elf elf32-avr)
+LOAD linker stubs
